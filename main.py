@@ -24,7 +24,7 @@ def process_queries(queries):
 
         elif cur_query.type == 'del':
 
-            if contacts[cur_query.number] == cur_query.number:
+            if cur_query.number in contacts:
                 del contacts[cur_query.number]
 
         else:
